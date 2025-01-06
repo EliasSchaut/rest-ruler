@@ -12,5 +12,5 @@
 		}
 	},
 
-	"postCreateCommand": "./gradlew assemble && java -jar build/libs/rest-ruler.jar -h && ./gradlew test && ./gradlew jacocoTestReport"
+	"postCreateCommand": "cd ~/rest-ruler; ./gradlew assemble && java -jar build/libs/rest-ruler.jar -h && ./gradlew test && ./gradlew jacocoTestReport"
 }
