@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RestRulerCli" type="MicronautRunConfigurationType" factoryName="Micronaut" editBeforeRun="true" nameIsGenerated="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="21" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="cli.RestRulerCli" />
+    <module name="rest-ruler.main" />
+    <option name="alternativeJrePath" value="21" />
+    <option name="alternativeJrePathEnabled" value="true" />
+    <option name="mainClass" value="cli.RestRulerCli" />
+    <option name="passParentEnvs" value="true" />
+    <option name="programParameters" value="-p https://api.apis.guru/v2/specs/circleci.com/v1/openapi.yaml" />
+    <option name="vmParameters" />
+    <method v="2" />
+  </configuration>
+</component>

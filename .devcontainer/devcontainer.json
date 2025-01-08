@@ -12,4 +12,10 @@
   },
 
   "postCreateCommand": "gradle assemble",
+
+  "customizations": {
+    "jetbrains": {
+      "backend": "IntelliJ"
+    }
+  },
 }
