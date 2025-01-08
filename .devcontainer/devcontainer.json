@@ -1,16 +1,15 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
-	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "name": "Java",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": "false",
+      "installGradle": "true"
+    }
+  },
 
-	"features": {
-		"ghcr.io/devcontainers/features/java:1": {
-			"version": "latest",
-			"installMaven": "false",
-			"installGradle": "true"
-		}
-	},
-
-	"postCreateCommand": "./gradlew assemble && java -jar build/libs/rest-ruler.jar -h && ./gradlew test && ./gradlew jacocoTestReport"
+  "postCreateCommand": "gradle assemble",
 }
